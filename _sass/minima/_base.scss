@@ -35,7 +35,12 @@ body {
   background-color: #FFFFDD;
 }
 
-
+img {
+  border: .3em solid #e0dfcc;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
