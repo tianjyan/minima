@@ -339,3 +339,21 @@
     width: calc(50% - (#{$spacing-unit} / 2));
   }
 }
+
+// index
+.post-card{
+  margin-top:1em;
+  margin-bottom:1em;
+  .title{
+      max-width: 500px;
+      color: #272727;
+      display: inline-block;
+      font-size: 20px;
+  }
+  .details{
+      float: right;
+      text-align: right;
+      margin-left: 20px;
+      font-size: 15px;
+  }
+}

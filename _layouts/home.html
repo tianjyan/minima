@@ -24,7 +24,7 @@ layout: base
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
+      <!-- <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
@@ -34,7 +34,19 @@ layout: base
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
-      </li>
+      </li> -->
+      <div class="post-card">
+        <a class="title" href="{{site.baseurl}}{{ post.url }}">
+            {{ post.title }}
+        </a>
+
+        <div class="details">
+            <b>{{ post.date | date: "%d %B %Y" }}</b>
+        </div>
+    </div>
+    {% if forloop.last == false %}
+    <hr>
+    {% endif %}
       {%- endfor -%}
     </ul>
 
