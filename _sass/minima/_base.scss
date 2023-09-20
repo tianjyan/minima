@@ -35,13 +35,6 @@ body {
   background-color: #FFFFDD;
 }
 
-img {
-  border: .3em solid #e0dfcc;
-  -moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
-}
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -72,6 +65,10 @@ main {
 img {
   max-width: 100%;
   vertical-align: middle;
+  border: .3em solid #e0dfcc;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
 }
 
 
@@ -284,4 +281,13 @@ table {
     -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
+}
+
+h1, h2, h3 {
+  margin: .4em 0 .2em 0;
+  padding: 0 0 .2em 0;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  border-bottom: 1px solid #d3d3d3;
 }
